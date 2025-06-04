@@ -1,0 +1,55 @@
+/* styles.css */
+
+/* Make the body a flex container in column direction */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the viewport */
+  margin: 0; /* Remove default margin */
+}
+
+/* Make the main section a flex container in row direction */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* Takes up remaining space between header and footer */
+}
+
+/* Article takes 2/3 of the width */
+article {
+  flex: 2;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+/* Aside takes 1/3 of the width */
+aside {
+  flex: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 1rem;
+  background-color: #e0e0e0;
+}
+
+/* Basic styling for header and footer */
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Optional: make sure your ul inside header nav looks nicer */
+header ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+
