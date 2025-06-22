@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.results {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+              url('images/headphones_hero_2.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+}
+
+.results h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.results .intro {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.stat {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+}
+
+.stat img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.stat-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  pointer-events: none;
+}
+
+.stat span {
+  margin-top: 10px;
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 480px) {
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat {
+    width: 150px;
+    height: 150px;
+  }
+
+  .stat-text {
+    font-size: 1.5rem;
+  }
+
+  .stat span {
+    font-size: 0.95rem;
+  }
+}

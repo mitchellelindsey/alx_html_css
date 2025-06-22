@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+              url('images/headphones_hero_1.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  text-transform: lowercase;
+  opacity: 0.85;
+  transition: color 0.3s;
+}
+
+/* ✅ Link hover and active */
+.nav-links li a:hover,
+.nav-links li a:active {
+  color: #FF6565;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: auto;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.subheading {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #ff4d5a;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 30px;
+  transition: opacity 0.3s;
+}
+
+/* ✅ Button hover and active */
+.cta-btn:hover,
+.cta-btn:active {
+  opacity: 0.9;
+}
+
+.description {
+  font-size: 0.95rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .hero-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .subheading {
+    font-size: 0.95rem;
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+}
